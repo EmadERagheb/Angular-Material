@@ -42,4 +42,12 @@
         <mat-datepicker #datePickerRef [dateClass]="dataClass"></mat-datepicker>
     </mat-form-field>
 
+    <mat-checkbox formControlName="downloadsAllowed" color="primary" value="">Download Allowed</mat-checkbox>
+
+    <mat-form-field >
+        <mat-label>Description</mat-label>
+
+        <textarea matInput formControlName="longDescription" cdkTextareaAutosize cdkAutosizeMinRows="2"
+            cdkAutosizeMaxRows="5" placeholder="Description"></textarea>
+    </mat-form-field>
 </div>
